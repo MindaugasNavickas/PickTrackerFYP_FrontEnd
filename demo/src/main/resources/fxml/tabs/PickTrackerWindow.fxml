@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.demo.controllers.PickTrackerController">
+  <tabs>
+    <Tab fx:id="ClickAndCollect" closable="false" text="Click And Collect">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="350.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="logOutButton" mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="46.0" prefWidth="99.0" text="Log out" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="370.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ListView fx:id="clickAndCollectListView" onMouseClicked="#cncListItemClicked" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="6" />
+                  <Label minHeight="-Infinity" prefHeight="17.0" prefWidth="82.0" text="Order Type" />
+                  <Label prefHeight="17.0" prefWidth="88.0" text="Customer ID">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Order ID">
+                     <GridPane.margin>
+                        <Insets left="200.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </content>
+    </Tab>
+    <Tab fx:id="NextDay" closable="false" text="Next Day">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="350.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="123.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ListView fx:id="nextDayListView" onMouseClicked="#ndListItemClicked" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="6" />
+                  <Label minHeight="-Infinity" prefWidth="200.0" text="Order Type" />
+                  <Label prefWidth="200.0" text="Customer ID">
+                     <GridPane.margin>
+                        <Insets left="200.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefWidth="200.0" text="Order ID">
+                     <GridPane.margin>
+                        <Insets left="400.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button fx:id="logOutButtonND" mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="46.0" prefWidth="99.0" text="Log out" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="370.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </content>
+    </Tab>
+      <Tab fx:id="International" closable="false" text="International">
+         <content>
+            <GridPane>
+               <children>
+                  <ListView fx:id="internationalListView" onMouseClicked="#intItemListClicked" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="6" />
+                  <Label minHeight="-Infinity" prefWidth="200.0" text="Order Type" />
+                  <Label prefWidth="200.0" text="Customer ID">
+                     <GridPane.margin>
+                        <Insets left="200.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefWidth="200.0" text="Order ID">
+                     <GridPane.margin>
+                        <Insets left="400.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button fx:id="logOutButtonInt" mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="46.0" prefWidth="99.0" text="Log out" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="370.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="350.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="123.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

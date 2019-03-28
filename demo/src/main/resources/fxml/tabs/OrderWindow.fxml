@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.demo.controllers.SingleOrderController">
+   <tabs>
+      <Tab fx:id="OrderView" closable="false" text="Click And Collect">
+         <content>
+            <GridPane>
+               <children>
+                  <Button fx:id="logOutButton" mnemonicParsing="false" prefHeight="46.0" prefWidth="99.0" text="Log out" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="370.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ListView fx:id="itemView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" GridPane.rowSpan="6" />
+                  <Label minHeight="-Infinity" prefHeight="17.0" prefWidth="82.0" text="Order Type" />
+                  <Label prefHeight="17.0" prefWidth="88.0" text="Customer ID">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="98.0" text="Order ID">
+                     <GridPane.margin>
+                        <Insets left="200.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="350.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="350.0" minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
