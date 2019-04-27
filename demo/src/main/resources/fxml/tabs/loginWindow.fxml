@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.demo.demo.controllers.LoginFormController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picker.client.controllers.LoginFormController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.8372802734375" minWidth="10.0" prefWidth="254.15586853027344" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.1490478515625" minWidth="10.0" prefWidth="345.84413146972656" />
