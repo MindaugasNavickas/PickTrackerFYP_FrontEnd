@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.picker.client;
 
 public class Order {
 	private String orderID;

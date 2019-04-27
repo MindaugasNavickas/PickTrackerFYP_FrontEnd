@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -11,15 +11,15 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import com.picker.client.Item;
+import com.picker.client.Main;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-
-import com.demo.demo.Item;
-import com.demo.demo.Main;
 
 @Component
 public class SingleOrderController implements Initializable {

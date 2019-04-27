@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,13 +24,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-import com.demo.demo.Employee;
-import com.demo.demo.Main;
-import com.demo.demo.MixpanelController;
-import com.demo.demo.Order;
-import com.demo.demo.controllers.PickTrackerController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.picker.client.Employee;
+import com.picker.client.Main;
+import com.picker.client.MixpanelController;
+import com.picker.client.Order;
+import com.picker.client.controllers.PickTrackerController;
 
 @Component
 public class LoginFormController implements Initializable {

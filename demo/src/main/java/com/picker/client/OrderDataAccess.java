@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.picker.client;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

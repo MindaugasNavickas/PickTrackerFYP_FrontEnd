@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;

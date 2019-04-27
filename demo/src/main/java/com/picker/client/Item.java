@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.picker.client;
 
 public class Item {					//Item class with getters, setters and constructors.
 	private String itemID;

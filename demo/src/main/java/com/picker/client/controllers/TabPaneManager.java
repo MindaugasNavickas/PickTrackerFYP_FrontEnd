@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import org.springframework.stereotype.Component;
 

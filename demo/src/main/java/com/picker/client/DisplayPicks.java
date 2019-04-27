@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.picker.client;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

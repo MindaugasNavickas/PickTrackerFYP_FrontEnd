@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -12,14 +12,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.demo.demo.Employee;
-import com.demo.demo.Main;
-import com.demo.demo.MixpanelController;
-
-//import org.springframework.boot.autoconfigure.condition.ConditionMessage.ItemsBuilder;
-
-import com.demo.demo.Order;
 import com.mixpanel.mixpanelapi.MixpanelMessageException;
+import com.picker.client.Employee;
+import com.picker.client.Main;
+import com.picker.client.MixpanelController;
+import com.picker.client.Order;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

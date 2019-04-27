@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.picker.client;
 
 public class Employee {			//Employee class with Getters, Setters and constructors.
 

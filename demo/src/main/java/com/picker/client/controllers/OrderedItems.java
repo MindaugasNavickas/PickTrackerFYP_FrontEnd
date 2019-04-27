@@ -1,4 +1,4 @@
-package com.demo.demo.controllers;
+package com.picker.client.controllers;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.demo.demo.Item;
-import com.demo.demo.Main;
+import com.picker.client.Item;
+import com.picker.client.Main;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
