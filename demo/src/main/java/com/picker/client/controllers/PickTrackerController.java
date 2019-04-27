@@ -77,7 +77,6 @@ public class PickTrackerController implements Initializable {
 				+ cncPickList.get(clickAndCollectListView.getSelectionModel().getSelectedIndex()).getCustomerID());
 		
 		Order order = cncPickList.get(clickAndCollectListView.getSelectionModel().getSelectedIndex());
-		System.out.println("ITEM ID IS: "+order.getItemID());
 		Main main = new Main();
 		main.orderDisplay(order.getItemID());
 		singleOrderController.orderBuilder(order.getItemID());
@@ -88,7 +87,6 @@ public class PickTrackerController implements Initializable {
 		mixpanel.trackUserInteraction(emp.getUserID(), emp.getUsernameLogin(), "Order Selected ID :"
 				+ ndPickList.get(nextDayListView.getSelectionModel().getSelectedIndex()).getOrderID());
 		Order order = ndPickList.get(nextDayListView.getSelectionModel().getSelectedIndex());
-		System.out.println("ITEM ID IS: "+order.getItemID());
 		Main main = new Main();
 		main.orderDisplay(order.getItemID());
 		singleOrderController.orderBuilder(order.getItemID());
@@ -99,14 +97,12 @@ public class PickTrackerController implements Initializable {
 		mixpanel.trackUserInteraction(emp.getUserID(), emp.getUsernameLogin(), "Order Selected ID :"
 				+ intPickList.get(internationalListView.getSelectionModel().getSelectedIndex()).getCustomerID());
 		Order order = intPickList.get(internationalListView.getSelectionModel().getSelectedIndex());
-		System.out.println("ITEM ID IS: "+order.getItemID());
 		Main main = new Main();
 		main.orderDisplay(order.getItemID());
 		singleOrderController.orderBuilder(order.getItemID());
 	}
 
 	public void generateUser(String id, String username) {
-		System.out.println("generateUsers id: " + id + " username: " + username);
 		emp = new Employee(id, username);
 		emp.setUserID(id);
 		emp.setUsernameLogin(username);
@@ -114,7 +110,6 @@ public class PickTrackerController implements Initializable {
 
 	@FXML
 	private void logOut() {
-		System.out.println("logOut PTC");
 		Main main = new Main();
 		main.shutdown();
 	}
@@ -127,7 +122,6 @@ public class PickTrackerController implements Initializable {
 				});
 		pick = response.getBody();
 
-		System.out.println(pick.size());
 
 		for (int i = 0; i < pick.size(); i++) {
 //			ord.setOrderID(pick.get(i).getOrderID());

@@ -60,7 +60,6 @@ public class LoginFormController implements Initializable {
 		// USED
 		// https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to-fire-and-handle-http-requests
 
-//		System.out.println(URL + username.getText() + "&worker_password=" + passwordField.getText());
 		userLogin();
 
 	}
@@ -82,7 +81,6 @@ public class LoginFormController implements Initializable {
 
 			employees = response.getBody();
 
-			System.out.println("Employees returned to LFC " + employees);
 
 			for (int i = 0; i < employees.size(); i++) {						//iterates through employee array 
 
@@ -94,8 +92,7 @@ public class LoginFormController implements Initializable {
 
 					if (employees.get(i).getUserRights().equals("admin")								//checks which type of user has logged in, depending on the user rights,
 							|| employees.get(i).getUserRights().equals("Admin")) {						//the displays are different.
-						System.out.println("Welcome " + employees.get(i).getUsernameLogin() + " Your access rights are "
-								+ employees.get(i).getUserRights());
+
 						main.afterLoginWindow(employees.get(i).getUsernameLogin(), employees.get(i).getUserRights());
 
 					} else {
@@ -108,7 +105,6 @@ public class LoginFormController implements Initializable {
 			}
 
 		} else {
-			System.out.println("please enter username and passowrd.");
 		}
 	}
 

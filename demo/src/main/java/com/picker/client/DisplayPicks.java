@@ -30,7 +30,6 @@ public class DisplayPicks extends Application {
         internationalDeliveryTab.setText("InternationalDelivery");
         tabPane.getTabs().add(internationalDeliveryTab);
         
-        
         StackPane root = new StackPane();
         Scene scene = new Scene(root, 640, 480);
         mainPane.setCenter(tabPane);

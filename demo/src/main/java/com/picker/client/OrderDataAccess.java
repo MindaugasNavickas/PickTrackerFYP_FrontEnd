@@ -22,7 +22,6 @@ public class OrderDataAccess {
         	try {
 				Class.forName("com.mysql.cj.jdbc.Driver").newInstance();			//tries to create new connection to the database server
 				connection = DriverManager.getConnection(dbURL, user, password);	//uses parameters to log in to the database.
-        		System.out.println("trying to connecto to the server");
 
 
 			} catch (InstantiationException e) {
@@ -39,7 +38,6 @@ public class OrderDataAccess {
 
 	public void shutdown() throws SQLException {			
 		if(connection != null) {
-			System.out.println("closing connection");
 			connection.close();
 		}
 	}

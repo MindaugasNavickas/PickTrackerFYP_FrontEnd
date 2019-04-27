@@ -44,7 +44,6 @@ public class SingleOrderController implements Initializable {
 	public void orderBuilder(String itemID) {
 //		main.orderDisplay(itemID);
 		RestTemplate restTemplate = new RestTemplate();
-		System.out.println(URL + itemID);
 		ResponseEntity<List<Item>> response = restTemplate.exchange(URL + itemID, HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Item>>() {
 				});
@@ -58,22 +57,18 @@ public class SingleOrderController implements Initializable {
 		}
 
 		itemView.setItems(orderItemsBuilder);
-		System.out.println(orderItemsBuilder);
 		
 		
 		
 //		final Order order = new Order(productName, desc, qty, loc);
 ////		orderListView.setItems(orderItemsBuilder);
 //		orderItemsBuilder.add(order.getCustomerID() + "\t\t\t" + order.getItemID() + "\t\t\t" + order.getOrderID() + "\t\t\t" + order.getOrderType());
-//		System.out.println(productName+" "+desc+" "+qty+" "+loc+"\n");
 //
-//		System.out.println(order.getCustomerID()+" "+order.getItemID()+" "+order.getOrderID()+" "+order.getOrderType());
 //
 
 	}
 	@FXML
 	private void logOut() {
-		System.out.println("logOut PTC");
 		Main main = new Main();
 		main.shutdown();
 	}
